@@ -1,20 +1,70 @@
-/* RESETS
-    Here you put styles that modify the original behavior CSS/HTML had,
-    for example: list elements come with a little circle that nobody uses anymore.
- */
-ul{margin: 0; padding:0;}
-ul li{list-style: none;}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
 
-/* 
-    BEHAVIORAL STYLES
-    for example: .horizontal, .container, .p-1 (for padding one)
-*/
-.p-1{ padding: 10px; }
+}
 
 
+#container {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: gray;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
 
 
-/* 
-    SPECIFIC TO YOUR WEBSITE 
-    The more senior you become the less you have specific styles
-*/
+.logo {
+    flex-grow: 1;
+    flex-basis: 65%;
+    font-weight: 400px;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 1px 1px 0px #ccc;
+}
+
+#menu {
+    flex-grow: 1;
+    flex-basis: 30%;
+    height: 100%;
+}
+
+#menu>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    list-style: none;
+}
+
+#menu a {
+    color: gray;
+    text-decoration: none;
+}
+
+.box1 {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}

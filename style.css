@@ -54,27 +54,37 @@
     text-decoration: none;
 }
 
+#principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500;
+    height: 500px;
+}
+
 #images{
-    width: 70%;
-    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    list-style: none;
 }
-
 .box1 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    width: 70%;
+    height: 35%;
+    overflow:hidden;
 }
 
-
-.image1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-
+.image1{
+    object-fit: contain;
 }
 
 .box2{
     width: 25%;
     width:25%
+}
+
+#letrasimg{
+    color: gray;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
